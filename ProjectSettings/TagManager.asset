@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pathway
+  - CinemachineTarget
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Path
   - Water
   - UI
   - 
