@@ -5,4 +5,6 @@ public class PlayerInfo : ScriptableObject
 {
     public string playerName;
     public string parkName;
+
+    public float timer;
 }

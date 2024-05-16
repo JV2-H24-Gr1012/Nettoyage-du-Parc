@@ -29,7 +29,7 @@ public class PassiveDogAI : MonoBehaviour
         GameObject newCheckpoint = null;
         while(newCheckpoint == null)
         {
-            _aiManager.GetNewCheckpoint(true);
+            newCheckpoint = _aiManager.GetNewCheckpoint(true);
         }
         if(currentCheckpoint != null)
         {

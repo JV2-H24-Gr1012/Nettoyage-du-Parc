@@ -37,11 +37,11 @@ public class Checkpoint : MonoBehaviour
                 other.GetComponent<Humanoid2AI>().OnCheckpointReached();
             }
         }
-        else if(other.gameObject.GetComponent<PassiveDogAI>() != null)
+        else if(other.gameObject.GetComponent<DogBehavior>() != null)
         {
-            if(other.gameObject.GetComponent<PassiveDogAI>().currentCheckpoint == gameObject)
+            if(other.gameObject.GetComponent<DogBehavior>().currentCheckpoint == gameObject)
             {
-                other.GetComponent<PassiveDogAI>().OnCheckpointReached();
+                other.GetComponent<DogBehavior>().OnCheckpointReached();
             }
         }
     }

@@ -37,7 +37,7 @@ public class HumanoidAI : MonoBehaviour
         GameObject newCheckpoint = null;
         while(newCheckpoint == null)
         {
-            _aiManager.GetNewCheckpoint(true);
+            newCheckpoint = _aiManager.GetNewCheckpoint(false);
         }
         if(currentCheckpoint != null)
         {

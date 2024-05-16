@@ -31,4 +31,9 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void LoadSceneByID(int id)
+    {
+        SceneManager.LoadScene(id);
+    }
 }

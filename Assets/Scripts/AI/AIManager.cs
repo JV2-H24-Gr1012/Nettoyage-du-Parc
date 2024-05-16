@@ -8,6 +8,9 @@ public class AIManager : MonoBehaviour
     [SerializeField] private GameObject[] _dogCheckpoints;
     [SerializeField] private GameObject[] _itemDrops;
     [SerializeField] private Vector3 _itemDropRange;
+    [SerializeField] private GameObject _dog;
+    [SerializeField] private GameObject _dogRescue;
+    [SerializeField] private TimeManager _timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,7 @@ public class AIManager : MonoBehaviour
             int randomNumber = GetRandomID(_dogCheckpoints);
             if(_dogCheckpoints[randomNumber].GetComponent<Checkpoint>().isTaken == false) 
             {
+                Debug.Log(_dogCheckpoints[randomNumber]);
                 return _dogCheckpoints[randomNumber];
             }
             
@@ -69,6 +73,14 @@ public class AIManager : MonoBehaviour
 
     public void ReleaseDog()
     {
+        _dog.GetComponent<DogBehavior>().ToggleBehavior();
+        _dogRescue.SetActive(true);
+    }
 
+    public void DogRescued()
+    {
+        _dog.GetComponent<DogBehavior>().ToggleBehavior();
+        _timer.AddTime(30f);
+        _dogRescue.SetActive(false);
     }
 }
