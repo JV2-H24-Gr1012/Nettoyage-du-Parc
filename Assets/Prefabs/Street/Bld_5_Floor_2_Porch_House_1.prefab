@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 424322400824758735}
   - component: {fileID: 2452079912634705157}
   - component: {fileID: 967849043766989968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bld_5_Floor_2_Porch_House_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

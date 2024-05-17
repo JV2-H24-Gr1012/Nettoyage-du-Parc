@@ -11,6 +11,7 @@ public class AIManager : MonoBehaviour
     [SerializeField] private GameObject _dog;
     [SerializeField] private GameObject _dogRescue;
     [SerializeField] private TimeManager _timer;
+    [SerializeField] private GameObject _police;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,6 +81,7 @@ public class AIManager : MonoBehaviour
     public void DogRescued()
     {
         _dog.GetComponent<DogBehavior>().ToggleBehavior();
+        _police.GetComponent<Humanoid2AI>().ToggleWalk();
         _timer.AddTime(30f);
         _dogRescue.SetActive(false);
     }

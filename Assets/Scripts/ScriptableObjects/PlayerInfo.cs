@@ -11,5 +11,4 @@ public class PlayerInfo : ScriptableObject
     public int score;
 
     public bool holdingItem;
-    public GameObject heldItem;
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemScript : MonoBehaviour
 {
     [SerializeField] private PlayerInfo _player;
+    public ItemType itemType;
     // Start is called before the first frame update
     void Start()
     {

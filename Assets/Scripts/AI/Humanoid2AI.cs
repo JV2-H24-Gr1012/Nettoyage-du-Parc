@@ -10,13 +10,14 @@ public class Humanoid2AI : MonoBehaviour
     public GameObject currentCheckpoint;
 
     private bool isWalking;
+    [SerializeField] private GameObject _questIcon;
     
     // Start is called before the first frame update
     void Start()
     {
         UpdateCheckpoint();
         Debug.Log(currentCheckpoint);
-        isWalking = false;
+        isWalking = true;
     }
 
     // Update is called once per frame
@@ -56,6 +57,9 @@ public class Humanoid2AI : MonoBehaviour
 
     public void ToggleWalk()
     {
+        isWalking = !isWalking;
         GetComponent<NavMeshAgent>().speed = (isWalking) ? 1.5f : 0f;
+        gameObject.GetComponent<Animator>().SetTrigger("trigger");
+        _questIcon.GetComponent<Animator>().SetTrigger("trigger");
     }
 }

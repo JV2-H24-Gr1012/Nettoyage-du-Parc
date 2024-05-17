@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 153b9a56d6191c541a01e771f45463de, type: 3}
   m_Name: Cola Can
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 1

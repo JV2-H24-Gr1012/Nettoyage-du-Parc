@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 7163210582347210833}
   - component: {fileID: 6108866296279003124}
   - component: {fileID: 8296750701887888190}
-  - component: {fileID: 9161184461897560702}
-  m_Layer: 0
+  - component: {fileID: 6300353902732284408}
+  - component: {fileID: 5329154880092576028}
+  - component: {fileID: 7913630222981764210}
+  m_Layer: 6
   m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +86,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9161184461897560702
+--- !u!65 &6300353902732284408
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,5 +105,47 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 13, y: 5, z: 12.999999}
-  m_Center: {x: -6.5, y: 2.5, z: 6.5}
+  m_Size: {x: 2.125, y: 0.25, z: 13}
+  m_Center: {x: -11.875, y: 0.125, z: 6.5}
+--- !u!65 &5329154880092576028
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503848817757764331}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.125, y: 0.25, z: 13}
+  m_Center: {x: -1.125, y: 0.125, z: 6.5}
+--- !u!65 &7913630222981764210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503848817757764331}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13, y: 0, z: 12.999999}
+  m_Center: {x: -6.5, y: 0, z: 6.5}

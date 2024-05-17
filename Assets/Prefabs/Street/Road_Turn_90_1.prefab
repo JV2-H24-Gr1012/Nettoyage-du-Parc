@@ -11,8 +11,11 @@ GameObject:
   - component: {fileID: 758145849644659895}
   - component: {fileID: 4407513544288811794}
   - component: {fileID: 1931575292059340760}
-  - component: {fileID: 1910740341854895007}
-  m_Layer: 0
+  - component: {fileID: 9166495200723567722}
+  - component: {fileID: 8195077186631239243}
+  - component: {fileID: 4797615190395839507}
+  - component: {fileID: 4636580700762795374}
+  m_Layer: 6
   m_Name: Road_Turn_90_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +87,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1910740341854895007
+--- !u!65 &9166495200723567722
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,5 +106,68 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 13, y: 5, z: 12.999999}
-  m_Center: {x: -6.5, y: 2.5, z: 6.5}
+  m_Size: {x: 2.125, y: 0.25, z: 13}
+  m_Center: {x: -1.125, y: 0.125, z: 6.5}
+--- !u!65 &8195077186631239243
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130227319832964621}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13, y: 0.25, z: 2.125}
+  m_Center: {x: -6.5, y: 0.125, z: 1.125}
+--- !u!65 &4797615190395839507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130227319832964621}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.125, y: 0.25, z: 2.125}
+  m_Center: {x: -11.9375, y: 0.125, z: 11.9375}
+--- !u!65 &4636580700762795374
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130227319832964621}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13, y: 0, z: 12.999999}
+  m_Center: {x: -6.5, y: 0, z: 6.5}
