@@ -7,4 +7,9 @@ public class PlayerInfo : ScriptableObject
     public string parkName;
 
     public float timer;
+
+    public int score;
+
+    public bool holdingItem;
+    public GameObject heldItem;
 }
