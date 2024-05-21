@@ -25,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458508386006541741}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.9914449, z: 0, w: 0.13052626}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4980514479231747881}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 165, z: 0}
 --- !u!33 &5213288824218897413
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -83,7 +83,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5644566328745139603
+--- !u!1 &1901875197479632964
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,52 +91,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4980514479231747881}
-  - component: {fileID: 8264540803012184204}
-  - component: {fileID: 6148956498112527430}
-  - component: {fileID: 2903210007723846704}
-  - component: {fileID: 6984206623594969114}
-  - component: {fileID: 2449833317838808488}
-  - component: {fileID: 3401526946324844467}
+  - component: {fileID: 278141379930474597}
+  - component: {fileID: 4054565728990410016}
+  - component: {fileID: 579957930269530414}
+  - component: {fileID: 3426110911820830300}
   m_Layer: 0
-  m_Name: ParcelBox_Yellow
+  m_Name: ParcelBox_Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4980514479231747881
+--- !u!4 &278141379930474597
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5644566328745139603}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.615956, y: 1.2406342, z: 3.701171}
+  m_GameObject: {fileID: 1901875197479632964}
+  m_LocalRotation: {x: 0, y: 0.9914449, z: 0, w: 0.13052626}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6172914341590989092}
-  - {fileID: 3414842884116467788}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8264540803012184204
+  m_Children: []
+  m_Father: {fileID: 4980514479231747881}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 165, z: 0}
+--- !u!33 &4054565728990410016
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5644566328745139603}
+  m_GameObject: {fileID: 1901875197479632964}
   m_Mesh: {fileID: 5062721402615729014, guid: ac5d4f263a9b14b83a3e7291bd6f4eb1, type: 3}
---- !u!23 &6148956498112527430
+--- !u!23 &579957930269530414
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5644566328745139603}
+  m_GameObject: {fileID: 1901875197479632964}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -172,13 +167,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2903210007723846704
+--- !u!65 &3426110911820830300
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5644566328745139603}
+  m_GameObject: {fileID: 1901875197479632964}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -193,6 +188,43 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.175, y: 0.05, z: 0.175}
   m_Center: {x: 0, y: 0.035, z: 0}
+--- !u!1 &5644566328745139603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4980514479231747881}
+  - component: {fileID: 6984206623594969114}
+  - component: {fileID: 2449833317838808488}
+  - component: {fileID: 3401526946324844467}
+  m_Layer: 0
+  m_Name: ParcelBox_Yellow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4980514479231747881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5644566328745139603}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.533405, y: 1.2721294, z: -0.6272906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6172914341590989092}
+  - {fileID: 3414842884116467788}
+  - {fileID: 278141379930474597}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &6984206623594969114
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -227,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 11400000, guid: d68d61bfc0e00204ca197fc34d295d74, type: 2}
-  itemType: 2
+  _item: {fileID: 11400000, guid: 91c585626c4edba4d9447e364eb50633, type: 2}
 --- !u!54 &3401526946324844467
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -279,14 +311,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5904994682830609734}
-  m_LocalRotation: {x: 0.5735764, y: 0, z: 0, w: 0.8191521}
+  m_LocalRotation: {x: 0.07486678, y: 0.81214416, z: -0.5686694, w: 0.10692086}
   m_LocalPosition: {x: 0, y: 0.13, z: 0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4980514479231747881}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 70, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 70, y: 165, z: 0}
 --- !u!65 &6204730106366839066
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -307,4 +339,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.175, y: 0.05, z: 0.175}
-  m_Center: {x: 0, y: 0.035, z: 0}
+  m_Center: {x: 0, y: 0.125, z: 0.025}

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
+    [SerializeField] private MouseLockBugFix _mouseLocker;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,10 @@ public class SceneChange : MonoBehaviour
 
     public void NextScene()
     {
+        if(_mouseLocker != null)
+        {
+            _mouseLocker.CursorBeforeSceneChange();
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

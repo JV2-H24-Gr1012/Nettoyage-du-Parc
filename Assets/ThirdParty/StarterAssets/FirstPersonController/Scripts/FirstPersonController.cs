@@ -64,6 +64,9 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
+		// Added SFX
+		[SerializeField] private PlayerWalkSFX _sfxScript;
+
 	
 #if ENABLE_INPUT_SYSTEM
 		private PlayerInput _playerInput;
@@ -115,6 +118,7 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			SFXThings();
 		}
 
 		private void LateUpdate()
@@ -194,6 +198,8 @@ namespace StarterAssets
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
 
+			
+
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 		}
@@ -263,6 +269,28 @@ namespace StarterAssets
 
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
+		}
+		// Handles SFX stuff.
+		private void SFXThings()
+		{
+			_sfxScript.ChangeTimeBetweenSteps(_speed);
+			if(Grounded)
+			{
+				if(_input.jump && _sfxScript.grounded == true)
+				{
+					_sfxScript.grounded = false;
+					_sfxScript.jumping = true;
+				}
+				else if(_verticalVelocity <= 0)
+				{
+					if(_sfxScript.grounded == false)
+					{
+						_sfxScript.landing = true;
+					}
+					_sfxScript.grounded = true;
+				}
+			}
+			
 		}
 	}
 }

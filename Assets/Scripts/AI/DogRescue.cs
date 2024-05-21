@@ -26,6 +26,7 @@ public class DogRescue : MonoBehaviour
         if(other.gameObject == _dog && _dogHasLeft)
         {
             _aiManager.DogRescued();
+            _dogHasLeft = false;
         }
     }
 

@@ -11,6 +11,7 @@ public class DogBehavior : MonoBehaviour
     [SerializeField] private GameObject _player;
 
     [SerializeField] private TimeManager _timeManager;
+    [SerializeField] private AudioSource _hurtSFX;
     private bool _isAngry;
     // Start is called before the first frame update
     void Start()
@@ -81,6 +82,15 @@ public class DogBehavior : MonoBehaviour
         if(other.gameObject == _player && _isAngry)
         {
             _timeManager.ReduceTime(5f);
+            _hurtSFX.Play();
         }
+    }
+
+    public void Death()
+    {
+        gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        GetComponent<Animator>().enabled = false;
+        Destroy(gameObject.GetComponent<NavMeshAgent>());
+        Destroy(this);
     }
 }

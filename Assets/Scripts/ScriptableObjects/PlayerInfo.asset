@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d28d6104271bf874c81293880bef12fd, type: 3}
   m_Name: PlayerInfo
   m_EditorClassIdentifier: 
+  playerName: aaa
+  parkName: bbb
+  timer: 32.377983
+  score: 0
+  holdingItem: 0

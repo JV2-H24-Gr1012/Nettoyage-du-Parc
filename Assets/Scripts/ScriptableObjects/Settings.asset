@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc891d9a850dd645b1f64c7b2e09158, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: 
-  musicVolume: 0
-  sfxVolume: 0
+  musicVolume: 100
+  sfxVolume: 100
   startTimeInSeconds: 120
-  startTimeMinutes: 0
-  startTimeSeconds: 0

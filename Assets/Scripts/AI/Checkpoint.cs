@@ -44,5 +44,12 @@ public class Checkpoint : MonoBehaviour
                 other.GetComponent<DogBehavior>().OnCheckpointReached();
             }
         }
+        else if(other.gameObject.GetComponent<CarAI>() != null)
+        {
+            if(other.gameObject.GetComponent<CarAI>().currentCheckpoint == gameObject)
+            {
+                other.GetComponent<CarAI>().OnCheckpointReached();
+            }
+        }
     }
 }
