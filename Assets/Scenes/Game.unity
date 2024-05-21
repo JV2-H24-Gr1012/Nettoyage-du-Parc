@@ -11131,7 +11131,7 @@ GameObject:
   - component: {fileID: 829988387}
   - component: {fileID: 829988386}
   m_Layer: 0
-  m_Name: MainCanvas
+  m_Name: MainCanvas1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23244,7 +23244,7 @@ GameObject:
   - component: {fileID: 1757039609}
   - component: {fileID: 1757039608}
   m_Layer: 0
-  m_Name: OptionsCanvas
+  m_Name: OptionsCanvas1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32732,7 +32732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _aiManager: {fileID: 1254810859}
-  _dogOdds: 1
+  _dogOdds: 0.5
   currentCheckpoint: {fileID: 0}
   _walkSFX: {fileID: 1676413846}
   _questIcon: {fileID: 671788980}
