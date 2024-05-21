@@ -31,7 +31,7 @@ public class ItemScript : MonoBehaviour
             heldItem.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             heldItem.transform.localPosition = Vector3.zero;
             heldItem.transform.localRotation = Quaternion.identity;
-            Destroy(heldItem.GetComponent<Collider>());
+            heldItem.GetComponent<Collider>().isTrigger = true;
             Instantiate(heldItem, other.gameObject.transform.GetChild(0));
             _player.holdingItem = true;
             Destroy(gameObject);

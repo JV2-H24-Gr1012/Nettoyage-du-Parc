@@ -33,15 +33,21 @@ public class PlayerWalkSFX : MonoBehaviour
                 PlayStep();
             }
         }
-        if(jumping)
+        if(jumping && grounded)
         {
+            Debug.Log("Called because of Jump");
+            grounded = false;
             jumping = false;
             PlayStep();
+            
         }
-        if(landing)
+        if(landing && !grounded)
         {
+            Debug.Log("Called because of Land");
+            grounded = true;
             landing = false;
             PlayStep();
+            
         }
         
     }

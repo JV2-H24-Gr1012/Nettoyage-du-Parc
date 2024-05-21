@@ -12,7 +12,9 @@ public class StartTimeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _timeSlider.value = _settings.startTimeInSeconds;
         UpdateTime();
+        
     }
 
     // Update is called once per frame

@@ -276,21 +276,14 @@ namespace StarterAssets
 			_sfxScript.ChangeTimeBetweenSteps(_speed);
 			if(Grounded)
 			{
-				if(_input.jump && _sfxScript.grounded == true)
+				_sfxScript.jumping = _input.jump ? true : false;
+				_sfxScript.landing = _sfxScript.grounded ? false : true;
+				if(_sfxScript.jumping == true && _sfxScript.landing == true)
 				{
-					_sfxScript.grounded = false;
-					_sfxScript.jumping = true;
-				}
-				else if(_verticalVelocity <= 0)
-				{
-					if(_sfxScript.grounded == false)
-					{
-						_sfxScript.landing = true;
-					}
-					_sfxScript.grounded = true;
+					_sfxScript.jumping = false;
+					_sfxScript.landing = false;
 				}
 			}
-			
 		}
 	}
 }
